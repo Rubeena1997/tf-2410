@@ -4,7 +4,7 @@ resource "aws_instance" "example" {
   key_name = "rubi"
   subnet_id     = aws_subnet.myntra-web-sn.id
   vpc_security_group_ids = [aws_security_group.myntra-web-sg.id]
- ## user_data = file("lms.sh")
+  user_data = file("lms.sh")
 
   tags = {
     Name = "myntra"
