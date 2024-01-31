@@ -1,5 +1,5 @@
 resource "aws_instance" "example" {
-  ami           = "ami-03f4878755434977f"
+  ami           = "ami-008fe2fc65df48dac"
   instance_type = "t2.micro"
   key_name = "newkey.pem"
   subnet_id     = aws_subnet.myntra-web-sn.id
